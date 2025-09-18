@@ -280,9 +280,18 @@
   text-align: center;
   display: flex;
   align-items: center;
-  gap: 10px;
   width: 600px;
   justify-content: space-between;
+  border-radius: 5px;
+  padding: 20px 10px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.food-list-tbl tr:hover {
+  background-color: rgba(149, 143, 143, 0.161);
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
 }
 
 .food-list-tbl tr .infor {
@@ -507,6 +516,17 @@
   display: flex;
   margin-bottom: 55px;
   gap: 30px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.daily-offers .food-list > div:hover {
+  border-radius: 5px;
+  padding: 10px 15px;
+  background-color: rgba(149, 143, 143, 0.161);
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
 }
 
 .daily-offers .food-list .name-and-price {
