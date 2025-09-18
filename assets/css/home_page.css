@@ -262,10 +262,14 @@
 .food-list-tbl {
   display: flex;
   padding: 20px 0px;
-  margin: 10px 0px;
+  margin: 0;
   border-top: 1px solid rgba(255, 255, 255, 0.181);
   justify-content: space-between;
   gap: 140px;
+}
+
+.food-list-tbl > table {
+  width: 50%;
 }
 
 .type-list {
@@ -276,7 +280,7 @@
   text-align: center;
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 10px;
   width: 600px;
   justify-content: space-between;
 }
@@ -285,6 +289,18 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.food-list-tbl tr .infor h4 {
+  width: 400px;
+  text-align: left;
+}
+
+.food-list-tbl tr .infor p {
+  width: 50px;
+  padding: 0;
 }
 
 /* 6 */
@@ -844,9 +860,27 @@
     text-align: center;
   }
 
+  .choose-and-taste tr {
+    display: flex;
+    gap: 10px;
+  }
+
+  .choose-and-taste .img {
+    max-width: 100px;
+    margin-right: 0;
+  }
+
+  .choose-and-taste .infor {
+    max-width: 400px;
+  }
+
+  .choose-and-taste .infor p {
+    margin-right: 0;
+    padding-right: 0;
+  }
+
   .choose-and-taste > p {
     font-size: 14px;
-    max-width: 400px;
   }
 
   .type-list {
