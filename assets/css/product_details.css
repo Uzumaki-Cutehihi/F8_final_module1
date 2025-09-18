@@ -178,10 +178,10 @@
   line-height: 28px;
 }
 
-.food-describtion .title span:nth-child(2) {
+.food-describtion .title span:nth-child(1) {
   text-decoration: underline #fb8f2c 1px;
   text-underline-offset: 22px;
-  color: #aaa5a5;
+  color: var(--orange);
 }
 
 /* review */
