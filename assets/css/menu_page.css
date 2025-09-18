@@ -1,0 +1,178 @@
+.more {
+  width: 180px;
+  margin-bottom: 60px;
+}
+
+.meal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 90px;
+  margin-bottom: 60px;
+}
+
+.meal .food-items {
+  display: flex;
+  gap: 30px;
+}
+
+.meal .food-items .describtion {
+  max-width: 370px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.098);
+  margin-bottom: 18px;
+}
+
+.meal .oder {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.meal .oder .price {
+  font-family: "Libre Bodoni";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 34px; /* 141.667% */
+  text-transform: capitalize;
+}
+
+.meal .oder a {
+  color: white;
+  font-size: 16px;
+  font-family: "Plus Jakarta Sans";
+  padding-bottom: 5px;
+  border-bottom: 1px white solid;
+}
+.meal .food-name {
+  margin-top: 20px;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.starters {
+  margin-bottom: 150px;
+}
+
+/* 2 */
+.highlight-1 {
+  background-image: url("../img/home_page/bg.png");
+  height: 532px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.highlight-1 .container {
+  padding: 46px 100px;
+  width: 770px;
+  height: 300px;
+  background: rgba(17, 17, 20, 0.5);
+  backdrop-filter: blur(2px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.highlight-1 .container h2 {
+  max-width: 570px;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.highlight-1 .container p {
+  color: #fff;
+  text-align: center;
+  font-family: "Plus Jakarta Sans";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 38px;
+  margin-bottom: 45px;
+}
+
+.highlight-1 .container a {
+  display: inline-flex;
+  padding: 12px 40px;
+  align-items: flex-start;
+  gap: 10px;
+  background-color: #fb8f2ccc;
+  color: #fff;
+}
+
+/* Hieu ung */
+
+.food-items > div {
+  border-radius: 5px;
+  padding: 20px 10px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.food-items > div:hover {
+  background-color: rgba(149, 143, 143, 0.161);
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.oder > a {
+  transition: all 0.3s ease;
+}
+
+.oder > a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background: orange;
+  transition: width 0.3s ease;
+}
+
+.oder > a:hover {
+  color: orange;
+  border-bottom: none;
+}
+
+.oder > a:hover::after {
+  width: 100%; /* chạy đầy từ trái sang phải */
+}
+
+@media screen and (max-width: 767px) {
+  .meal .food-items > div:nth-child(2),
+  .meal .food-items > div:nth-child(3) {
+    display: none;
+  }
+
+  .meal > h2,
+  .highlight-1 h2 {
+    font-family: "Libre Bodoni";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 50px; /* 125% */
+    text-transform: capitalize;
+  }
+
+  .meal > .food-items > .describtion {
+    font-family: "Plus Jakarta Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+  .highlight-1 > .container > p {
+    font-size: 18px;
+  }
+
+  .highlight-1 > .container {
+    max-width: 380px;
+  }
+}

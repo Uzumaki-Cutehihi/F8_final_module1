@@ -1,0 +1,341 @@
+/* Tổng thể */
+.invoice {
+  background-color: #1b1b1b;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  color: #fff;
+}
+
+/* Cart container */
+.invoice {
+  margin: 100px 135px;
+}
+
+.del {
+  font-size: 10px;
+}
+
+.cart-header {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  padding: 12px 20px;
+  border-bottom: 1px solid #333;
+  font-weight: bold;
+  text-align: left;
+  color: #ccc;
+}
+
+/* Cart rows */
+.cart-row {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  align-items: center;
+  padding: 35px 20px;
+  border-bottom: 1px solid #333;
+}
+
+.food-cell {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: #fff;
+}
+
+.food-cell img {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.price,
+.subtotal {
+  font-size: 14px;
+  color: #ddd;
+}
+
+.qty {
+  display: flex;
+  align-items: center;
+  border: 1px solid #555;
+  width: fit-content;
+}
+
+.qty button {
+  background: none;
+  border: none;
+  color: #fff;
+  width: 35px;
+  height: 35px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.qty input {
+  width: 40px;
+  text-align: center;
+  border-left: 1px solid #555;
+  border-right: 1px solid #555;
+  background: transparent;
+  color: #fff;
+  border-bottom: none;
+  border-top: none;
+  font-size: 14px;
+}
+
+.cart-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  margin-top: 20px;
+}
+
+.coupon {
+  display: flex;
+  gap: 10px;
+}
+
+.coupon input {
+  padding: 10px;
+  border: none;
+  outline: none;
+  background: #333;
+  color: #fff;
+  border-radius: 3px;
+}
+
+.btn {
+  padding: 10px 25px;
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
+  font-size: 16px;
+}
+
+.coupon .btn {
+  background: #f7931a;
+  color: #fff;
+}
+
+.cart-actions .btn:last-child {
+  background: #d87c2d;
+  color: #fff;
+}
+
+.food-cell img {
+  margin-left: 15px;
+  margin-right: 30px;
+}
+
+/* total */
+
+.cart-total {
+  display: flex;
+  justify-content: right;
+  margin-bottom: 100px;
+}
+
+.cart-total h4 {
+  color: white;
+  font-family: "Libre Bodoni";
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 40px;
+  margin-bottom: 20px;
+}
+
+.cart-total form {
+  border: 1px solid #333;
+  width: 500px;
+}
+
+.cart-total table {
+  background-color: #1b1b1b;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.cart-total table tr {
+  border-bottom: 1px solid #333;
+}
+
+.cart-total table th {
+  text-align: left;
+  padding: 25px 35px;
+  font-weight: 500;
+  vertical-align: top;
+  color: #ccc;
+  margin-bottom: 15px;
+}
+
+.cart-total table th:nth-child(2) {
+  text-align: left;
+  color: #fff;
+}
+
+.cart-total table p {
+  margin: 6px 0;
+  font-size: 16px;
+  color: #ccc;
+}
+
+.cart-total table p span {
+  font-weight: bold;
+  color: #fff;
+}
+
+.cart-total select,
+.cart-total input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #444;
+  padding: 8px 0;
+  font-size: 15px;
+  color: #fff;
+  outline: none;
+  margin-top: 10px;
+}
+
+.cart-total select option {
+  background: #1e1e1e;
+  color: #fff;
+}
+
+input::placeholder {
+  color: #777;
+}
+
+.cart-total button {
+  margin-top: 15px;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+/* .cart-total button:not(.check-ou-btnt) {
+  background: #fff;
+  color: #000;
+  font-weight: bold;
+} */
+
+.check-out-btn {
+  display: block;
+  width: 100%;
+  background: #f7931e;
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 14px 0;
+  margin: 0;
+  border-radius: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .invoice,
+  .cart-totals {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cart-header,
+  .food-cell > img {
+    display: none;
+  }
+
+  .food-cell {
+    color: rgb(174, 117, 38);
+    font-family: "Plus Jakarta Sans";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px;
+  }
+
+  .cart-row {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    border-radius: 6px;
+    padding: 12px;
+    margin-bottom: 15px;
+  }
+
+  .food-cell {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 500;
+  }
+
+  .price::before {
+    content: "Price: ";
+    font-weight: bold;
+    margin-right: 5px;
+    color: white;
+    font-family: "Plus Jakarta Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px;
+  }
+  .qty::before {
+    content: "Quantity: ";
+    font-weight: bold;
+    margin-right: 5px;
+    color: white;
+    font-family: "Plus Jakarta Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px;
+  }
+  .subtotal::before {
+    content: "Subtotal: ";
+    font-weight: bold;
+    margin-right: 5px;
+    color: white;
+    font-family: "Plus Jakarta Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px;
+  }
+
+  .qty {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .qty input {
+    width: 40px;
+    text-align: center;
+  }
+
+  .cart-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .cart-actions .coupon {
+    display: flex;
+    gap: 5px;
+  }
+
+  .cart-actions button {
+    width: 100%;
+  }
+
+  .cart-total {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+  }
+}

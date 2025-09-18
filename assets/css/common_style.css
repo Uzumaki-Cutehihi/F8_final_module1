@@ -1,0 +1,314 @@
+:root {
+  --orange: #fb8f2c;
+  --black: #111114;
+  --grey: #cfcfd0c4;
+}
+
+body {
+  background-color: var(--black);
+}
+
+header,
+footer,
+section {
+  margin: 0px 135px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--grey);
+}
+
+/* header */
+header .menu {
+  color: var(--grey);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+header .menu .menu-logo {
+  width: 53px;
+  height: 55px;
+  flex-shrink: 0;
+}
+
+header .menu .menu-iteams a {
+  font-family: "Plus Jakarta Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+header .menu .menu-iteams {
+  display: flex;
+  gap: 34px;
+}
+
+header .menu .menu-infor span {
+  font-family: "Plus Jakarta Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+header .menu .menu-infor span:nth-child(2) {
+  color: white;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 6px;
+  margin-left: 20px;
+}
+
+header .res-menu {
+  display: none;
+}
+
+/* footer */
+footer {
+  padding-bottom: 60px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 77px;
+}
+
+.footer-logo {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.title {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px;
+  color: white;
+  margin-bottom: 24px;
+}
+
+/* Danh sách link */
+footer ul {
+  list-style: none;
+}
+
+footer ul li {
+  margin-bottom: 16px;
+}
+
+footer ul li a {
+  color: var(--grey);
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+ul li a:hover {
+  color: #fff;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+/* email highlight */
+footer .contact-info ul li:nth-child(2) a {
+  color: #fb8f2c;
+}
+
+.footer-col .logo img {
+  border: 1px solid white;
+  border-radius: 5px;
+  width: 121.6px;
+  height: 36px;
+}
+
+.footer-col > p {
+  color: var(--grey);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  margin-bottom: 18px;
+}
+
+.footer-col .footer-logo {
+  margin-bottom: 76px;
+}
+
+.footer-col .footer-logo svg {
+  height: 48px;
+}
+
+/* style for common text */
+
+/* heading */
+
+.heading-1,
+.heading-2 {
+  color: white;
+  font-family: "Libre Bodoni";
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 74px; /* 115.625% */
+  text-transform: capitalize;
+}
+
+.heading-2 {
+  text-align: center;
+}
+
+/* title */
+
+/* title 1 - 24px */
+
+.title-1 {
+  color: #fff;
+  font-family: "Libre Bodoni";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 34px; /* 141.667% */
+  text-transform: capitalize;
+}
+
+.title-2 {
+  color: #fff;
+  font-family: "Libre Bodoni";
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 40px;
+  text-transform: capitalize;
+}
+
+/* paragraph */
+
+.para-16,
+.para-16-center {
+  color: var(--grey);
+  font-family: "Plus Jakarta Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+}
+.para-16-center {
+  text-align: center;
+}
+
+.para-18,
+.para-18-center {
+  color: var(--grey);
+  font-family: "Plus Jakarta Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px; /* 155.556% */
+}
+
+.para-18-center {
+  text-align: center;
+}
+
+/* Hieu ung cho chuot */
+header .menu-iteams a {
+  transition: all 0.3s ease;
+}
+
+header .menu-iteams > a:hover {
+  color: orange;
+  text-shadow: 0 0 5px orange;
+}
+
+/* responsive */
+@media screen and (max-width: 767px) {
+  section,
+  header {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .footer {
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+
+  .heading-1 {
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 52px;
+  }
+
+  .para-16,
+  .para-16-center {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+  header .res-menu {
+    display: block;
+  }
+
+  header .menu-iteams > a {
+    display: none;
+  }
+
+  header .menu {
+    display: flex;
+    align-items: center;
+  }
+
+  header .menu-infor > span:nth-child(1) {
+    display: none;
+  }
+
+  header .menu-infor > span:nth-child(2) {
+    position: absolute;
+    right: 0;
+  }
+
+  header {
+    margin: 0;
+    padding: 0;
+  }
+
+  header > div {
+    width: 90%;
+    display: flex;
+    position: relative;
+  }
+
+  header > .menu > div:nth-child(2) {
+    position: absolute;
+    left: 30px;
+  }
+
+  header > .menu > div:nth-child(3) {
+    position: absolute;
+    left: 45%;
+  }
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(6px); /* làm mờ toàn bộ phía sau */
+  background: rgba(0, 0, 0, 0.2); /* thêm lớp tối nhẹ */
+  z-index: 5;
+  opacity: 0;
+  pointer-events: none; /* tắt click khi ẩn */
+  transition: opacity 0.3s ease;
+}
